@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<h1>500 error</h1>
+
+    <ul>
+      <li>오류 정보</li>
+      <li th:text="|timestamp: ${timestamp}|"></li>
+      <li th:text="|path: ${path}|"></li>
+      <li th:text="|status: ${status}|"></li>
+      <li th:text="|message: ${message}|"></li>
+      <li th:text="|error: ${error}|"></li>
+      <li th:text="|exception: ${exception}|"></li>
+      <li th:text="|errors: ${errors}|"></li>
+      <li th:text="|trace: ${trace}|"></li>
+    </ul>
 </body>
 </html>
